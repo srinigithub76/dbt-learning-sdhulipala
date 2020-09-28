@@ -35,11 +35,15 @@ models:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
 sources:
   - name: jaffle_shop
+    description: Jaffle projects
     database: raw
-    tables:
+    tables: 
       - name: customers
       - name: orders
   - name: stripe
-    database:
-    tables:
-      -name: payment
+    description: payments
+    database: raw
+    tables: 
+      - name: payment
+      
+
